@@ -1,4 +1,5 @@
 psychro
 =======
 
-psychrometric properties of Moist Air
+Psychrometric properties of moist air.
+
