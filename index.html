@@ -1,45 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Bruce Wernick" />
-    <title>title</title>
-    <style>
-      body {font-family:"courier new"}
-      #byline, #copyrite {font-size:10pt;color:#ccc}
-      #copyrite {text-align:center}
-      article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display: block}
-    </style>
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <nav>
-      <a href="#">item1</a> |
-      <a href="#">item2</a> |
-      <a href="#">item2</a>
-    </nav>
-    <header>
-      <h1>Heading</h1>
-      <p id="byline">Author: Bruce Wernick<br>Last Updated: 27 June 2012</p>
-    </header>
-    <article>
-      <hgroup>
-        <h1>Article 1 heading</h1>
-        <h2>Article 1 sub-heading</h2>
-      </hgroup>
-      <section>
-        <h3>Section 1 heading</h3>
-      </section>
-    </article>
-    <aside>
-      <p>Aside...</p>
-    </aside>
-    <footer>
-      <p id="copyrite">&copy; 2014&nbsp;&nbsp;TechniSolve Software&nbsp;&nbsp;All rights reserved...</p>
-    </footer>
-  </body>	
+<head>
+  <meta charset="utf-8" />
+  <title>Responsive Design</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="wrapper">
+
+<header>
+  <h1><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/boxer_logo.png"/></a></h1>
+</header>
+
+<nav>
+  <ul>
+    <li class='active'><a href="#">Intro</a></li>
+    <li><a href="#">Size</a></li>
+    <li><a href="#">Play</a></li>
+    <li><a href="#">Food</a></li>
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+
+<aside class="sidebar">
+  <div id="social">
+  <table>
+  <tr>
+    <td><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/facebook.png" alt="facebook"/></a></td>
+    <td><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/twitter.png" alt="twitter"/></a></td>
+    <td><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="youtube"/></a></td>
+    <td><a href="#"><img src="http://www.w3newbie.com/wp-content/uploads/google_plus.png" alt="google plus"/></a></td>
+  </tr>
+  </table>
+  </div>
+</aside>
+
+<section class="left-col">
+  <h3>My Boxer Dog</h3>
+  <img src="http://www.w3newbie.com/wp-content/uploads/boxer1.png"/>
+  <p>If there isn't enough content in this section, you'll find that the "Play" section doesn't line up properly - read on in the "Size" section for an explanation!<br><br>So here is another line of content so it definitely lines up properly.</p>
+</section>
+
+<aside class="sidebar">
+  <h3>Size</h3>
+  <img src="http://www.w3newbie.com/wp-content/uploads/boxer2.png"/>
+  <p>With responsive websites, it's important to remember that the section or aside classes will display in the order which they are listed in the source code, so if the "Play section appears next to this one ("Size"), order "Food" under "Size" in your source code.</p>
+</aside>
+
+<aside class="sidebar">
+  <h3>Play</h3>
+  <img src="http://www.w3newbie.com/wp-content/uploads/boxer3.png"/>
+  <p>Feel free to download the source code to the website tutorial or you can take a look at the source code of this very web page as an internal style sheet was used.</p>
+</aside>
+
+<section class="left-col">
+  <h3>Food</h3>
+  <div class="vid">
+    <iframe width="560" height="315" src="http://www.youtube.com/embed/3-0A5LRfdj4" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <p>Here is the tutorial video itself, rather than the video used in the making of the video which can be found in the downloaded version.</p>
+</section>
+<div class="clearfix"></div>
+
+<footer id="footer">
+  <center><h4>&copy; <span id="date">2014</span> &nbsp;www.boxerdog.com &nbsp;All rights reserved...</h4></center>
+</footer>
+<div class="clearfix"></div>
+
+</div>
+</body>
 </html>
